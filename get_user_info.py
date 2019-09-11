@@ -1,23 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Sep  3 22:56:02 2019
-
-@author: Kris
-"""
-
 import csv
 import time
 
 import requests
 from bs4 import BeautifulSoup
-
-
-def get_val(tag, term):
-    try:
-        val = tag.find(term)['value'].encode('ascii', 'ignore')
-    except:
-        val = 'NaN'
-    return val
 
 
 base = 'http://www.boardgamegeek.com/xmlapi2/collection?username={}&stats=1'
