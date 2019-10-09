@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Sep  4 22:04:34 2019
-
-@author: Kris
-"""
-
-
 import re
 import csv
 import time
