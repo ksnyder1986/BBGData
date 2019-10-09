@@ -5,7 +5,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-
+#replace the H with S to get to the senate. Change the year if you want a different year. I can't 100% say for sure this wont fail at some point
 base = 'https://www.legis.state.pa.us/cfdocs/billinfo/bill_history.cfm?syear=2019&sind=0&body=H&type=B&bn={}'
 f = open('pers.csv', 'w')
 writer = csv.writer(f)
@@ -33,6 +33,6 @@ for i in range(462,463): #You will want to replace this range with a list of the
        print(name)
        writer.writerow((i+1,id,name))
        
-   time.sleep(2)
+   time.sleep(2) #2 second delay between each pull to prevent the website from kicking you off!!!
 rows
 f.close()
